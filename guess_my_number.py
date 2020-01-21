@@ -1,23 +1,18 @@
-import random
-
-
+import random,os
+os.system("cls")
 def check_ckeck(choice, num):
     if choice == num:
-        print "Its win !!"
+        print ("Its correct !!")
+        return True
     elif choice < num:
-        print "Its more then the gussed number"
-        num = input("Enter your choice (between 1 to 9): ")
-        check_ckeck(choice, num)
+        print ("Its more then the gussed number")
+        return False
     else:
-        print "Its less then the gussed number"
-        num = input("Enter your choice (between 1 to 9): ")
-        check_ckeck(choice, num)
-
-
-num = input("Enter your choice (between 1 to 9): ")
+        print ("Its less then the gussed number")
+        return False        
 choice = random.randint(1, 9)
-check_ckeck(choice, num)
-
-
-
-input("Enter to exit")
+answer = False
+while(answer != True):
+    num = int(input("Enter your choice (between 1 to 9): "))
+    answer = check_ckeck(choice, num)
+exit = input("Enter to exit")

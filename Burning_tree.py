@@ -1,3 +1,6 @@
+import os
+os.system("cls")
+
 def coordinate(x,y):
     result = "("+str(x)+","+str(y)+")"
     return result

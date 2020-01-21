@@ -1,6 +1,6 @@
 import os,sys
 import time
-
+os.system("cls")
 animals = {50:"Cat",60:"Panda",70:"Dog",80:"Wolf",90:"Lion",100:"Dragon","Error":"Something is wrong about you..!! :D"}
 questions = ["Do you like to go for tracking or out door activities ?","Do you like fighting movies?","Do you like to talk to people?","Do you like rock music?","Do you like to play any kind of sports ?"]
 

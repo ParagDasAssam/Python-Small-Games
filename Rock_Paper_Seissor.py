@@ -1,7 +1,7 @@
 import random
 import time
 import os
-
+os.system("cls")
 def converter(optn):
     if optn == "r":
         optn = "Rock"

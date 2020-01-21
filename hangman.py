@@ -1,6 +1,7 @@
 import time
 import random
 import os
+os.system("cls")
 Movie_list = ["Shrek","Finding Dory","Inside Out","Minions","Brave","Big Hero 6","Wall E","Ratatouille","Toy Story 3","Monsters University","How to Train Your Dragon","The Good Dinosaur"]
 Movie_details = {}
 def converter(movie):

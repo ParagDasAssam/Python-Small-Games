@@ -2,8 +2,9 @@ import os,sys
 import time
 def welcome_call():
     print("\n\t/---------------------------------\\")
-    print("\n\t|             Welcome             |")
-    print("\n\t|     To The Game Station V 1     |")
+    print("\n\t|                                 |")
+    print("\n\t|        Game Station V 1         |")
+    print("\n\t|                                 |")
     print("\n\t\---------------------------------/")
 
 def game_list():
@@ -11,9 +12,11 @@ def game_list():
     print(" 1) Hangman")
     print(" 2) Rock Paper Scissor")
     print(" 3) Find your spirit Animal")
-    print(" 4) Burning tree \n")
+    print(" 4) Burning tree")
+    print(" 5) hangman 2.0")
+    print(" 6) Guess the number")
     print(" 0) Exit")
-    optn = input("Enter which game you want to play: ")
+    optn = input("\nEnter which game you want to play: ")
     return optn
 
 def game_select(num):
@@ -26,6 +29,10 @@ def game_select(num):
         os.system("python find_your_spirit_animal.py")
     elif num == 4:
         os.system("python Burning_tree.py")
+    elif num == 5:
+        os.system("python hangman_2.0.py")
+    elif num == 6:
+        os.system("python guess_my_number.py")
     else:
         print("Wrong option selected")
         time.sleep(.5)
@@ -36,8 +43,19 @@ def exit_call():
    for c in string + '\n':
      sys.stdout.write(c)
      sys.stdout.flush()
-     time.sleep(.3)
+     time.sleep(.2)
 
+def Entry_call():
+    string = '\n\n\n\t\tWelcome to Game Station V 1   '
+    for c in string + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(.1)
+    time.sleep(.2)
+    
+
+Entry_call()
+os.system("cls")
 while(1):
     welcome_call()
     num = game_list()
