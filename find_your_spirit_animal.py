@@ -6,9 +6,9 @@ questions = ["Do you like to go for tracking or out door activities ?","Do you l
 
 
 def welcome_call():
-    print("\n\t/---------------------------------\\")
-    print("\n\t|    Find Your Spirit Animal      |")
-    print("\n\t\---------------------------------/")
+    print("\n\t---------------------------------")
+    print("\n\t    Find Your Spirit Animal      ")
+    print("\n\t---------------------------------")
 
 def optn():
     print("Enter your option:")
