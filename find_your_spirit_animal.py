@@ -1,7 +1,7 @@
 import os,sys
 import time
 os.system("cls")
-animals = {50:"Cat",60:"Panda",70:"Dog",80:"Wolf",90:"Lion",100:"Dragon","Error":"Something is wrong about you..!! :D"}
+animals = {10:"Snale",20:"Ant",30:"Rat",40:"Snake",50:"Cat",60:"Panda",70:"Dog",80:"Wolf",90:"Lion",100:"Dragon","Error":"Something is wrong about you..!! :D"}
 questions = ["Do you like to go for tracking or out door activities ?","Do you like fighting movies?","Do you like to talk to people?","Do you like rock music?","Do you like to play any kind of sports ?"]
 
 
@@ -14,6 +14,8 @@ def optn():
     print("Enter your option:")
     options = int(input("1) Yes\n2)Almost Yes\n3)Almost No\n4)No\n5)Not Sure\n\nYour option: "))
     score = {1:20,2:15,3:10,4:5,5:0}
+    # print("returning",score[options])
+    # time.sleep(1)
     return score[options]
 
 def animal_output(score):
@@ -27,11 +29,13 @@ def animal_output(score):
     return score
         
 def calculating():
-   string = '\n\tCalculating your score..'
-   for c in string + '\n':
-     sys.stdout.write(c)
-     sys.stdout.flush()
-     time.sleep(.2)
+    string = '\n\tCalculating your score..'
+    for c in string + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.2)
+    # print("Inside calculator")
+    # time.sleep(1)
      
 score = 0
 for question in questions:
@@ -42,6 +46,8 @@ for question in questions:
     
 score = animal_output(score)
 calculating()
-os.system("cls")
+# os.system("cls")
+# print("here Score is: ",score)
+# time.sleep(1)
 print("\n\n\tYour Spirit Animal Is: ",animals[score])
 time.sleep(2)
